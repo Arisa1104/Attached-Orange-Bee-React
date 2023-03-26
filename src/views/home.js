@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 import NavigationLinks from '../components/navigation-links'
 import FeatureCard3 from '../components/feature-card3'
 import FeatureCard2 from '../components/feature-card2'
-import BlogPostCard4 from '../components/blog-post-card4'
 import './home.css'
 
 const Home = (props) => {
@@ -72,9 +71,17 @@ const Home = (props) => {
       </header>
       <div className="home-hero">
         <div className="home-container2">
-          <h1 className="home-text">Harper Stone Official Website</h1>
-          <div className="home-btn-group">
-            <button className="home-button button">Get Started</button>
+          <h1 className="home-text">Harper Stone</h1>
+          <span className="home-text01">Official Website</span>
+          <div className="home-container3">
+            <a
+              href="https://google.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link"
+            >
+              Listen
+            </a>
           </div>
         </div>
         <img
@@ -84,8 +91,8 @@ const Home = (props) => {
         />
       </div>
       <div className="home-banner">
-        <h2 className="home-text01 Heading2">Learn to keep it simple</h2>
-        <span className="home-text02">
+        <h2 className="home-text02 Heading2">Learn to keep it simple</h2>
+        <span className="home-text03">
           <span>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
@@ -106,17 +113,17 @@ const Home = (props) => {
             </span>
           </span>
         </span>
-        <div className="home-btn-group1">
-          <button className="home-button1 button">Get Started</button>
-          <button className="home-button2 button">Learn More</button>
+        <div className="home-btn-group">
+          <button className="home-button button">Get Started</button>
+          <button className="home-button1 button">Learn More</button>
         </div>
       </div>
       <div className="home-features">
-        <h2 className="home-text06 Heading2">
+        <h2 className="home-text07 Heading2">
           <span>Discography</span>
           <br></br>
         </h2>
-        <div className="home-container3">
+        <div className="home-container4">
           <FeatureCard3
             text="Listen"
             title="Broken Melodies"
@@ -178,11 +185,11 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-features1">
-        <h2 className="home-text09">
+        <h2 className="home-text10">
           <span className="Heading2">Songwriting Credits</span>
           <br></br>
         </h2>
-        <div className="home-container4">
+        <div className="home-container5">
           <FeatureCard2
             year="2022"
             title="Starry Nights"
@@ -220,29 +227,63 @@ const Home = (props) => {
           ></FeatureCard2>
         </div>
       </div>
-      <div className="home-blog">
-        <BlogPostCard4
-          label="Business &amp; Travel"
-          rootClassName="rootClassName1"
-        ></BlogPostCard4>
-        <div className="home-container5">
-          <BlogPostCard4
-            label="Nature"
-            image_src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHRyYXZlbHxlbnwwfHx8fDE2MjY0MzI2Mjc&amp;ixlib=rb-1.2.1&amp;h=1000"
-            rootClassName="rootClassName2"
-          ></BlogPostCard4>
-          <BlogPostCard4
-            image_src="https://images.unsplash.com/photo-1446822775955-c34f483b410b?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHx0cmF2ZWwlMjBmb29kfGVufDB8fHx8MTYyNjQ1Mjg0Ng&amp;ixlib=rb-1.2.1&amp;w=1000"
-            rootClassName="rootClassName3"
-          ></BlogPostCard4>
+      <div className="home-banner1">
+        <h1 className="home-text13">Subscribe to My Newsletter</h1>
+        <span className="home-text14">
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            volutpat turpis.
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
+          <span>
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
+          <span>
+            Mauris luctus rutrum mi ut rhoncus. Integer in dignissim tortor.
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
+          <span>
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
+        </span>
+        <div className="home-container6">
+          <form
+            enctype="application/x-www-form-urlencoded"
+            method="POST"
+            action="https://formsubmit.co/arisa1104@me.com"
+            className="home-form"
+          >
+            <input
+              type="text"
+              placeholder="Email here..."
+              name="email"
+              required
+              className="home-textinput input"
+            />
+            <button type="submit" className="home-button2 button">
+              Subscribe
+            </button>
+          </form>
         </div>
-        <BlogPostCard4
-          image_src="https://images.unsplash.com/photo-1510525009512-ad7fc13eefab?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGJvYXR8ZW58MHx8fHwxNjI2NDUyODIx&amp;ixlib=rb-1.2.1&amp;w=1000"
-          rootClassName="rootClassName4"
-        ></BlogPostCard4>
       </div>
       <footer className="home-footer">
-        <span className="home-text12">2023 © Harper Stone</span>
+        <span className="home-text19">2023 © Harper Stone</span>
       </footer>
     </div>
   )
