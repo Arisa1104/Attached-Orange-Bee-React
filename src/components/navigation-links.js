@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -7,9 +8,15 @@ import './navigation-links.css'
 const NavigationLinks = (props) => {
   return (
     <nav className={`navigation-links-nav ${props.rootClassName} `}>
-      <span className="Menu navigation-links-text">{props.first}</span>
-      <span className="navigation-links-text1 Menu">{props.second}</span>
-      <span className="navigation-links-text2 Menu">{props.third}</span>
+      <Link to="/about" className="navigation-links-navlink Menu">
+        {props.first}
+      </Link>
+      <Link to="/works" className="navigation-links-navlink1 Menu">
+        {props.second}
+      </Link>
+      <Link to="/contact" className="navigation-links-navlink2 Menu">
+        {props.third}
+      </Link>
     </nav>
   )
 }

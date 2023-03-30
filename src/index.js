@@ -4,12 +4,18 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './style.css'
 import Home from './views/home'
+import Contact from './views/contact'
+import Works from './views/works'
+import About from './views/about'
 
 const App = () => {
   return (
     <Router>
       <div>
         <Route component={Home} exact path="/" />
+        <Route component={Contact} exact path="/contact" />
+        <Route component={Works} exact path="/works" />
+        <Route component={About} exact path="/about" />
       </div>
     </Router>
   )

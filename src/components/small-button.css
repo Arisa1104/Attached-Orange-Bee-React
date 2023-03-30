@@ -12,9 +12,6 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: var(--dl-color-primary-pink);
 }
-.small-button-root-class-name {
-  margin-top: var(--dl-space-space-unit);
-}
 
 @media(max-width: 479px) {
   .small-button-root-class-name1 {
